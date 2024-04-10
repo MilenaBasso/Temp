@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { View } from "react-native";
+import { styles } from "./src/Styles/StyleSheet";
+import { Pressable, View, Text } from "react-native";
 
 //Importando Components.
 import TextComp from "./src/TextComponent";
 import InputComp from "./src/InputComponent";
-import { useState } from "react";
 
 export default function App() {
   //Definindo Constantes.
@@ -14,7 +14,7 @@ export default function App() {
   //Cálculo para converter as temperaturas.
   const calcTemp = () => {
     const fahrenheit = (celsius * 9) / 5 + 32;
-    setFahrenheit;
+    setFahrenheit(fahrenheit);
   };
 
   //Zerar os valores para calcular de novo.
@@ -26,7 +26,11 @@ export default function App() {
   return (
     <View style={styles.container}>
       <TextComp />
-      <InputComp />
+      <InputComp graus={celsius} />
+      <Pressable onPress={calcularNovamente}>
+        <Text>Calcular Novamente</Text>
+      </Pressable>
+      ;
     </View>
   );
 }

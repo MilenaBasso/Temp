@@ -9,8 +9,17 @@ export const styles = StyleSheet.create({
   },
 
   text: {
+    fontSize: 30,
     color: "pink",
+    textAlign: 'center',
+    justifyContent: "center",
+  },
+
+  input: {
+    borderWidth: 2,
+    borderColor: "pink",
     alignItems: "center",
     justifyContent: "center",
+    marginBottom: 420,
   },
 });

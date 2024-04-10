@@ -1,9 +1,12 @@
-import { TextInput, View } from "react-native";
+import { TextInput } from "react-native";
+import { styles } from "./Styles/StyleSheet";
 
-export default function InputComp({ celsius }) {
+export default function InputComp({ graus }) {
   return (
-    <View style={styles.container}>
-      <TextInput placeholder="Digite a Temperatura em Celsius" />
-    </View>
+    <TextInput
+      style={styles.input}
+      placeholder="Temperatura em Celsius"
+      value={graus}
+    />
   );
 }
