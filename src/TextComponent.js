@@ -1,10 +1,7 @@
-import { Text, View } from "react-native";
-import { styles } from "./Styles/StyleSheet";
+import { Text } from "react-native";
 
-export default function TextComp({txt, styles}) {
-  return (
-      <Text style={styles} >{txt}</Text>
-        
-      
-  );
+
+//Exportando componente e definindo Props
+export default function TextComp({ txt, styles }) {
+  return <Text style={styles}>{txt}</Text>;
 }
