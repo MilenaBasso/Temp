@@ -3,28 +3,39 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "pink",
     alignItems: "center",
     justifyContent: "center",
-    padding: 10,
   },
 
   text: {
     fontSize: 30,
-    color: "pink",
+    color: "yellow",
     textAlign: "center",
     justifyContent: "center",
   },
 
   input: {
     borderWidth: 2,
+    fontSize: 20,
     borderColor: "pink",
-    marginBottom: 120,
+    alignItems: "center",
+    justifyContent: "center",
   },
 
   btn: {
-    marginBottom: 320,
-    borderWidth: 3,
-    borderColor: "pink",
+    borderWidth: 2,
+    fontSize: 20,
+    borderColor: "yellow",
+    marginBottom: "200",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+
+  result: {
+    fontSize: 20,
+    fontColor: "black",
+    textAlign: "center",
+    justifyContent: "center",
   },
 });

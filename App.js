@@ -20,25 +20,25 @@ export default function App() {
   //Zerar os valores para calcular de novo.
   const calcularNovamente = () => {
     setCelsius("");
-    console.log("limpar" + celsius);
     setTemperatura("");
-    console.log("limpar" + temperatura);
   };
 
   return (
     <View style={styles.container}>
-      <TextComp />
+      <TextComp txt="Calculadora de Graus Celsius para Fahrenheit" styles={styles.text}/>
       <InputComp graus={setCelsius} value={celsius} />
 
       {/*Botão para executar o cálculo */}
-      <Pressable onPress={calcTemp}>
+      <Pressable style={styles.btn} onPress={calcTemp}>
         <Text>Converter Temperatura</Text>
       </Pressable>
       {/* Resultado */}
-      <Text>{`Em fahrenheit são ${temperatura} graus`}</Text>
+      <Text style={styles.result}>
+        {`Em fahrenheit são ${temperatura} graus`}
+      </Text>
 
       {/* Botão para limpar os valores e calcular de novo. */}
-      <TouchableOpacity onPress={calcularNovamente}>
+      <TouchableOpacity style={styles.btn} onPress={calcularNovamente}>
         <Text>Calcular Novamente</Text>
       </TouchableOpacity>
     </View>
