@@ -13,8 +13,12 @@ export default function App() {
 
   //Cálculo para converter as temperaturas.
   const calcTemp = () => {
-    const fahrenheit = (celsius * 9) / 5 + 32;
-    setTemperatura(fahrenheit);
+    if (celsius != "") {
+      const fahrenheit = (celsius * 9) / 5 + 32;
+      setTemperatura(fahrenheit);
+    } else {
+      alert("Adicione um valor");
+    }
   };
 
   //Zerar os valores para calcular de novo.
@@ -25,7 +29,10 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <TextComp txt="Calculadora de Graus Celsius para Fahrenheit" styles={styles.text}/>
+      <TextComp
+        txt="Calculadora de Graus Celsius para Fahrenheit"
+        styles={styles.text}
+      />
       <InputComp graus={setCelsius} value={celsius} />
 
       {/*Botão para executar o cálculo */}

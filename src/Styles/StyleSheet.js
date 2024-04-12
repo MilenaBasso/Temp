@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
 
   //Estilização do Titulo
   text: {
-    fontSize: 30,
+    fontSize: 35,
     color: "yellow",
     textAlign: "center",
     justifyContent: "center",
@@ -37,7 +37,7 @@ export const styles = StyleSheet.create({
 
   //Estilização do texto de resposta
   result: {
-    fontSize: 20,
+    fontSize: 28,
     fontColor: "black",
     textAlign: "center",
     justifyContent: "center",
