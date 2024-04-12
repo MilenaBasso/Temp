@@ -8,6 +8,7 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
   },
 
+  //Estilização do Titulo
   text: {
     fontSize: 30,
     color: "yellow",
@@ -15,23 +16,26 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
   },
 
+  //Estilização da caixa de texto
   input: {
     borderWidth: 2,
     fontSize: 20,
-    borderColor: "pink",
+    borderColor: "black",
     alignItems: "center",
     justifyContent: "center",
   },
 
+  //Estilização dos botões
   btn: {
     borderWidth: 2,
-    fontSize: 20,
+    backgroundColor: "yellow",
     borderColor: "yellow",
     marginBottom: "200",
     alignItems: "center",
     justifyContent: "center",
   },
 
+  //Estilização do texto de resposta
   result: {
     fontSize: 20,
     fontColor: "black",
