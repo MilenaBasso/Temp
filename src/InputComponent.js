@@ -6,7 +6,8 @@ export default function InputComp({ graus }) {
     <TextInput
       style={styles.input}
       placeholder="Temperatura em Celsius"
-      value={graus}
+      keyboardType="numeric"
+      onChangeText={graus}
     />
   );
 }

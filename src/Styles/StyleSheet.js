@@ -6,20 +6,25 @@ export const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
+    padding: 10,
   },
 
   text: {
     fontSize: 30,
     color: "pink",
-    textAlign: 'center',
+    textAlign: "center",
     justifyContent: "center",
   },
 
   input: {
     borderWidth: 2,
     borderColor: "pink",
-    alignItems: "center",
-    justifyContent: "center",
-    marginBottom: 420,
+    marginBottom: 120,
+  },
+
+  btn: {
+    marginBottom: 320,
+    borderWidth: 3,
+    borderColor: "pink",
   },
 });
