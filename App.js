@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { styles } from "./src/Styles/StyleSheet";
-import { Pressable, View, Text } from "react-native";
+import { Pressable, View, Text, TouchableOpacity } from "react-native";
 
 //Importando Components.
 import TextComp from "./src/TextComponent";
@@ -20,20 +20,27 @@ export default function App() {
   //Zerar os valores para calcular de novo.
   const calcularNovamente = () => {
     setCelsius("");
-    temperatura("");
+    console.log("limpar" + celsius);
+    setTemperatura("");
+    console.log("limpar" + temperatura);
   };
 
   return (
     <View style={styles.container}>
       <TextComp />
-      <InputComp graus={setCelsius} />
+      <InputComp graus={setCelsius} value={celsius} />
+
+      {/*Botão para executar o cálculo */}
       <Pressable onPress={calcTemp}>
         <Text>Converter Temperatura</Text>
       </Pressable>
+      {/* Resultado */}
       <Text>{`Em fahrenheit são ${temperatura} graus`}</Text>
-      <Pressable onPress={() => calcularNovamente()}>
+
+      {/* Botão para limpar os valores e calcular de novo. */}
+      <TouchableOpacity onPress={calcularNovamente}>
         <Text>Calcular Novamente</Text>
-      </Pressable>
+      </TouchableOpacity>
     </View>
   );
 }
